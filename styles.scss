@@ -134,12 +134,14 @@ main {
         width: 100%;
         img{
             width: 100%;
+            border-radius: 2rem;
 
         }
     }
 
     #bottom{
         width: 100%;
+        border-radius: 2rem;
       background-color: rgb(37, 37, 37);
       @include flex-col(3rem);
       padding: 2rem;
@@ -198,7 +200,7 @@ main {
     }
 
     .view2{
-    gap: 18rem;
+    gap: 10rem;
     .text{
         h1{
             font-size: 3rem;
