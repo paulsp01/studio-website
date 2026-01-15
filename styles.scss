@@ -100,6 +100,30 @@ main {
       }
     }
   }
+
+
+  .view2{
+    display: flex;
+    flex-wrap: wrap;
+  
+    padding: 1rem;
+   gap: 3rem;
+   align-items: center;
+   justify-content: center;
+   .text{
+    @include flex-col(0rem);
+    letter-spacing: 2px;
+    align-items: center;
+     h4{
+        font-weight: 200;
+        opacity: 0.6;
+    }
+    h1{
+        font-weight: 300;
+        font-size: 2.5rem;
+    }
+   }
+  }
 }
 
 @media (min-width: 900px) {
@@ -107,10 +131,10 @@ main {
     .view1 {
       flex-direction: row;
 
-      #bottom,#top img {
+      #bottom,#top  {
         justify-content: space-between;
           
-         height: 100vh;
+         width: 50%;
 
         .text{
           
@@ -119,6 +143,15 @@ main {
         }
         }
       }
+    }
+
+    .view2{
+    gap: 10rem;
+    .text{
+        h1{
+            font-size: 3rem;
+        }
+    }
     }
   }
 }
