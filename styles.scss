@@ -134,7 +134,7 @@ main {
         width: 100%;
         img{
             width: 100%;
-            border-radius: 2rem;
+            border-radius: 1rem;
 
         }
     }
@@ -145,7 +145,7 @@ main {
       background-color: rgb(37, 37, 37);
       @include flex-col(3rem);
       padding: 2rem;
-      border-radius: 2rem;
+      border-radius: 1rem;
       letter-spacing: 1px;
       
 
@@ -199,7 +199,7 @@ main {
       background-position: center;
       background-size: cover;
       padding: 1rem;
-      border-radius: 2rem;
+      border-radius: 1rem;
 
      .icon,#bottom{
      
@@ -310,6 +310,164 @@ main {
 
     }
   }
+
+  .view7{
+    width: 100%;
+    padding: 1rem;
+    .box{
+      width: 100%;
+      @include flex-col(1rem);
+      background-color: rgb(206, 189, 99);
+      color: black;
+      text-transform: uppercase;
+      padding: 2rem;
+      border-radius: 1rem;
+
+      h1{
+        font-size: 3rem;
+        font-weight: 400;
+      }
+      h5{
+        font-weight: 500;
+        font-size: 1rem;
+        letter-spacing: 1px;
+      }
+
+
+      
+      button{
+        background-color: black;
+        color: white;
+        padding: 1rem;
+        border-radius: 0.5rem;
+       
+        
+        word-spacing: 1px;
+        h4{
+          opacity: 0.8;
+          line-height: 1.5rem;
+          font-weight: 400;
+          i{
+            font-weight: 100;
+          }
+        }
+      }
+    
+
+    }
+  }
+
+  .view8{
+    width: 100%;
+    @include flex-col(1rem);
+    padding: 1rem;
+
+
+    .box1{
+      width: 100%;
+      background-color:rgb(37, 37, 37) ;
+      @include flex-col(2rem);
+      padding: 2rem;;
+      justify-content: space-between;
+      h2{
+        font-weight: 300;
+        letter-spacing: 1px;
+      }
+      #bottom{
+        display: flex;
+        gap: 1rem;
+
+        .icon{
+          padding: 0.6rem 0.7rem;
+          border-radius: 2.5rem;
+          border: 1px solid rgb(203, 199, 199) ;
+          background-color: #323232;
+        }
+      }
+    }
+
+    .box2{
+       width: 100%;
+      background-color:rgb(37, 37, 37) ;
+      @include flex-col(2rem);
+      padding: 2rem;;
+      text-transform: uppercase;
+      
+      .b{
+        @include flex-col(2rem);
+        button{
+          background-color: rgb(206, 189, 99);
+          padding: 1rem;
+          width: fit-content;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          word-spacing: 1px;
+          border-radius: 0.5rem;
+        }
+
+        h2{
+          letter-spacing: 1px;
+          font-weight: 400;
+        }
+        h4{
+          opacity: 0.5;
+          font-weight: 400;
+        }
+      }
+
+    }
+
+    .box3{
+      width: 100%;
+      padding: 2rem;
+      background-color:rgb(37, 37, 37) ;
+       text-transform: uppercase;
+       @include flex-col(2rem);
+
+      #p1,#p2{
+        font-size: 1rem;
+       
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        text-wrap: nowrap;
+        a{
+          text-decoration: underline;
+        }
+       
+        span{
+          opacity: 0.5;
+          text-decoration: none;
+        }
+        
+        
+      }
+      #p2{
+        text-align: center;
+        span{
+          text-decoration: none;
+        }
+      }
+
+      .flex{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        
+        h2{
+          padding: 0.5rem 0.7rem;
+          border: 1px solid white;
+          border-radius: 2rem;
+          background-color: rgb(63, 63, 63);
+         
+
+          i{
+            font-weight: 100;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 900px) {
@@ -410,6 +568,76 @@ main {
       }
      }
     }
+  }
+
+  .view7{
+    .box{
+      padding: 4rem;
+      position: relative;
+      h1{
+        font-size: 5rem;
+        width: 60%;
+      }
+      
+      
+
+      button{
+        position: absolute;
+        bottom:20%;
+        right:5%;
+        padding: 1rem 2rem;
+        h4{
+          word-spacing: 0.5rem;
+          
+        }
+
+      }
+    }
+  }
+
+  .view8{
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: 1fr 20%;
+    grid-template-areas: "box1 box2"
+                          "box1 box3";
+    gap: 1rem;
+
+  .box1{
+   background-color:rgb(37, 37, 37) ;
+    grid-area: box1;
+    border-radius: 1rem;
+    padding: 3rem;
+  }
+
+  .box2{
+     background-color:rgb(37, 37, 37) ;
+    grid-area: box2;
+    display: flex;
+    flex-direction: row;
+    gap: 15rem; 
+    padding: 3rem;
+    border-radius: 1rem;
+  }
+
+  .box3{
+    background-color:rgb(37, 37, 37) ;
+    grid-area: box3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 1rem;
+    padding:3rem;
+
+
+    .f{
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+
+  
   }
 
   }
